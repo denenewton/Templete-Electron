@@ -1,0 +1,12 @@
+# pnpm create next-app meu-template
+# cd meu-template
+# pnpm add prisma @prisma/client
+# npx prisma init --datasource-provider sqlite
+
+# pnpm install --offline //para uma instalação offline, usando o cache local do pnpm. Certifique-se de ter os pacotes necessários já baixados no cache para que a instalação funcione corretamente.
+# npx prisma migrate dev --name init para criar a tabela no SQLite.
+
+#npx prisma generate
+#DATABASE_URL="file:./prisma/dev.db" npx prisma migrate dev --name init
+
+

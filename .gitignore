@@ -1,0 +1,45 @@
+# --- Boilerplate Electron + Next.js + Prisma ---
+
+# Dependências
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# Next.js (Renderer)
+/renderer/.next/
+/renderer/out/
+
+# Electron (Main / Build)
+/dist/               # Onde ficam os instaladores .dmg finais
+/app/                # Pasta temporária gerada pelo Nextron na raiz
+/main/*.log          # Logs de erro do Electron
+
+# Banco de Dados (Prisma / SQLite)
+*.db                 # Ignora seu banco de dados de teste (dev.db)
+*.db-journal         # Arquivos temporários do SQLite
+/prisma/migrations/  # (Opcional) Remova se quiser resetar o histórico de migrações
+
+# Variáveis de Ambiente (Segurança)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example        # PERMITE o .env.example para servir de modelo
+
+# macOS
+.DS_Store            # Arquivos invisíveis do sistema Apple
+.AppleDouble
+.LSOverride
+
+# Debug e Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+panic-*.log          # Logs de erro do Turbopack/Next.js
+
+# Typescript (Caso use no futuro)
+*.tsbuildinfo
+next-env.d.ts

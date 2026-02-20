@@ -1,0 +1,37 @@
+{
+  "name": "meu-sistema-de-login",
+  "version": "0.1.0",
+  "description": "Boilerplate para Apps macOS com Next.js 15, Electron e Prisma",
+  "author": "Daniel dos Santos Araujo",
+
+  "private": true,
+  "main": "main/background.js",
+  "scripts": {
+    "dev": "nextron -- -- turbo=false",
+    "build": "nextron build",
+    "postinstall": "prisma generate",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "electron-is-dev": "^3.0.1",
+    "electron-serve": "^3.0.1",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "nextron": "^9.4.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^24.13.3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^25.2.3",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "5.22.0",
+    "tailwindcss": "^4"
+  }
+}
