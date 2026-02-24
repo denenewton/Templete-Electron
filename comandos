@@ -6,7 +6,24 @@
 # pnpm install --offline //para uma instalação offline, usando o cache local do pnpm. Certifique-se de ter os pacotes necessários já baixados no cache para que a instalação funcione corretamente.
 # npx prisma migrate dev --name init para criar a tabela no SQLite.
 
-#npx prisma generate
+
+# instalar dependências (usa pnpm no repo)
+pnpm install
+
+# gerar o client (o script postinstall já roda isso, mas pode rodar manualmente)
+pnpm prisma generate
+
+# aplicar migrations em dev (cria prisma/dev.db)
+pnpm prisma migrate dev --name init
+
+# alternativa sem migrations (aplica schema direto)
+pnpm prisma db push
+
+# abrir Prisma Studio (UI)
+pnpm prisma studio
+
+# iniciar a aplicação
+pnpm dev
 #DATABASE_URL="file:./prisma/dev.db" npx prisma migrate dev --name init
 
 
