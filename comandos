@@ -24,6 +24,8 @@ pnpm prisma studio
 
 # iniciar a aplicação
 pnpm dev
+
+node node_modules/electron/install.js
 #DATABASE_URL="file:./prisma/dev.db" npx prisma migrate dev --name init
 
 
