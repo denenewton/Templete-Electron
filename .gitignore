@@ -5,6 +5,8 @@
 /.pnp
 .pnp.*
 .yarn/*
+/prisma/dev.db 
+/prisma/dev.db-journal
 
 # Next.js (Renderer)
 /renderer/.next/
